@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import { Segment } from 'semantic-ui-react';
 import Typical from 'react-typical';
-
 
 export default class Intro extends Component {
     render() {
         return (
-           <Segment>
-               <h1> Hi, I'm Surelis Segarra</h1>
-                <span>
-                    I'm a 
-                    <Typical
+           <div>
+               <h1 className='intro'> Hello, I'm Surelis Segarra</h1>
+                <h2 className='steps'>
+                    <Typical className='steps'
                         loop={Infinity}
                         wrapper='b'
                         steps={[
@@ -22,8 +19,8 @@ export default class Intro extends Component {
                         1000
                         ]}
                     />
-                </span>
-           </Segment>
+                </h2>
+           </div>
         )
     }
 }

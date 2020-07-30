@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
 import logo from '../assets/logo.png';
@@ -6,18 +6,16 @@ import logo from '../assets/logo.png';
 // import moon from '../assets/moon.png';
 import { Menu, Image, Icon } from 'semantic-ui-react';
 
-const NavigationBar = () => {
     
-    return (
-        <Menu
-        size='large'
-        inverted
-        fixed='left'
-        horizontal>
+ export default class NavigationBar extends Component {
 
-        <Image src={logo} alt='' style={{ width: 200 }}/>
-        </Menu>
-    )
-}
+        render() {
+            return (
+                <Menu secondary>
+                    <Image className='logo' src={logo}/>
+                </Menu>
+            )
+        }
+    }
+    
 
-export default NavigationBar;

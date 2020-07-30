@@ -9,15 +9,13 @@ import Intro from './Intro';
 export default class Home extends Component {
     render() {
         return (
-           <section>
-               <NavigationBar/>
-               <Intro/>
-               <section>
-                    <About/>
-                    <ProjectsCard/>
-                    <Contact/>
-                    <Footer/>
-               </section>
+            <section>
+                <NavigationBar/>
+                <Intro/>
+                <About/>
+                <ProjectsCard/>
+                <Contact/>
+                <Footer/>
            </section>
         )
     }

@@ -8,20 +8,42 @@ body, */
   margin-bottom: 100px;
   box-sizing: border-box;
   font-size: inherit;
-  font-family: 'Roboto Mono', monospace;
 }
 
 /* navBar.js */
 
+.logo{
+  width: 200px;
+  position: relative;
+  left:-50%; 
+}
+
+.menu {
+  bottom: 10%;
+}
+
 .sun {
-   position: absolute;
-    left: 50%;
-}
-
-.moon {
   position: absolute;
-   left: 50%;
+  float: right;
 }
 
+/* Intro.js */
+
+.intro {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  margin-top: 20px;
+  line-height: 1.15;
+}
+
+.steps {
+  color: #7c37ad;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  margin-top: 20px;
+  line-height: 1.15;
+}
 
 
