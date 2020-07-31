@@ -6,20 +6,18 @@ export default class Intro extends Component {
         return (
            <div>
                <h1 className='intro'> Hello, I'm Surelis Segarra</h1>
-                <h2 className='steps'>
                     <Typical className='steps'
                         loop={Infinity}
                         wrapper='b'
                         steps={[
                         'Web Developer',
                         1000,
-                        'painter (wannabe)',
+                        'Creative',
                         1000,
-                        'passionate',
+                        'Passionate',
                         1000
                         ]}
                     />
-                </h2>
            </div>
         )
     }

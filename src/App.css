@@ -15,7 +15,7 @@ body, */
 .logo{
   width: 200px;
   position: relative;
-  left:-50%; 
+  left:-45%; 
   padding-top: 100px;
 }
 
@@ -23,10 +23,6 @@ body, */
   bottom: 10%;
 }
 
-.sun {
-  position: absolute;
-  float: right;
-}
 
 /* Intro.js */
 
@@ -45,36 +41,37 @@ body, */
   font-size: 38px;
   margin-top: 20px;
   line-height: 1.15;
+  box-sizing: inherit;
+  position: relative;
+  left: -56px;
+  top: 20px;
 }
 
 
 /* About.js */
 
-.aboutMe {
-  word-break: keep-all;
-    font-size: 32px;
-    line-height: 1.333;
-    font-weight: bold;
-    color: var(--theme-ui-colors-primary,#000);
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
-    margin-bottom: 50px;
+.about-me {
+  font-size: 32px;
+  font-family: 'Merriweather',Georgia,Serif;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .about-container {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
-}
+  margin: 0px;
+  padding: 0px;
+} 
 
-.container {
-  right: 20%;
+.paragraph {
+   line-height: 1.756;
+    font-size: 18px;
+    font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
 }
 
 #resume {
   color: #7c37ad;
+  position: relative;
+  /* left: -24%; */
 }
 
 .profile-pic {
