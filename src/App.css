@@ -16,6 +16,7 @@ body, */
   width: 200px;
   position: relative;
   left:-50%; 
+  padding-top: 100px;
 }
 
 .menu {
@@ -47,3 +48,27 @@ body, */
 }
 
 
+/* About.js */
+
+.aboutMe {
+  word-break: keep-all;
+    font-size: 32px;
+    line-height: 1.333;
+    font-weight: bold;
+    color: var(--theme-ui-colors-primary,#000);
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+.about-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: #7c37ad;
+}
