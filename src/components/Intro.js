@@ -6,6 +6,7 @@ export default class Intro extends Component {
         return (
            <div>
                <h1 className='intro'> Hello, I'm Surelis Segarra</h1>
+               <div className='steps-container'>
                     <Typical className='steps'
                         loop={Infinity}
                         wrapper='b'
@@ -18,6 +19,7 @@ export default class Intro extends Component {
                         1000
                         ]}
                     />
+               </div>
            </div>
         )
     }
