@@ -1,19 +1,7 @@
-/* html, 
-body, */
-/* * {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 4rem;
-  margin-bottom: 100px;
-  box-sizing: border-box;
-  font-size: inherit;
-} */
-
 .app-container {
   max-width: 1300px;
   margin: 0 auto;
-
+  padding: 0 0 0 80px;
 }
 
 /* navBar.js */
@@ -25,7 +13,6 @@ body, */
 }
 
 /* Intro.js */
-
 
 .intro {
   font-style: normal;
@@ -46,10 +33,9 @@ body, */
   color: #7c37ad;
   font-style: normal;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 32px;
   line-height: 1.15;
 }
-
 
 /* About.js */
 
@@ -79,12 +65,10 @@ body, */
 }
 
 .paragraph {
-   line-height: 1.756;
-    font-size: 18px;
-    font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
-    max-width: 700px;
-
-
+  line-height: 1.756;
+  font-size: 18px;
+  font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+  max-width: 700px;
 }
 
 .profile-img {
@@ -94,7 +78,6 @@ body, */
 
 .img-container {
   flex: 2;
-  /* border-radius: 50%; */
 }
 
 .resume {
@@ -103,5 +86,82 @@ body, */
   font-size: 18px;
 }
 
-
 /* Projects card */
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+
+/* .front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+} */
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+
+.front img {
+  height: 100%;
+}
+
+.back {
+  background: #BBD1EA;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back-content  {
+  color: #1D2D44;
+  text-align: center;
+  width: 100%;
+}
+
+.icons {
+  margin: 20px 0;
+}
+
+.icons a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #1D2D44;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.icons a:hover {
+  background: #1D2D44;
+  color: white;
+}
+
+.card:hover > .front{
+transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg)
+}
