@@ -11,10 +11,15 @@ export default class Home extends Component {
         return (
             <section>
                 <NavigationBar/>
+                
                 <Intro/>
+
                 <About/>
+
                 <ProjectsCard/>
+                
                 <Contact/>
+
                 <Footer/>
            </section>
         )

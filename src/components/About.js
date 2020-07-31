@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Container, Header } from 'semantic-ui-react';
+import { Container, Header, Image } from 'semantic-ui-react';
+
 import Pdf from '../Documents/Resume.pdf';
+import avatar from '../assets/suri.jpeg';
 
 export default class About extends Component {
     render() {
@@ -17,7 +19,9 @@ export default class About extends Component {
                     While I am not coding you can find me cooking delicious meals at home, watchiong The Office for the thousandth time or going on road trips.
                 </p>
 
-                <a classname='resume' href={Pdf}>Link to my Resume</a>
+                <Image className='profile-pic' src={avatar}/>
+
+                <a id='resume' href={Pdf}>Link to my Resume</a>
             </Container>   
         )
     }
