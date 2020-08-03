@@ -13,7 +13,7 @@ export default class ProjectsCard extends Component {
     render() {
         return (
             <>
-                <h1>Projects</h1>
+                <h1 className='projects'>Projects</h1>
 
                 {/* project 1 */}
                 <div className='project-body'>
@@ -23,7 +23,7 @@ export default class ProjectsCard extends Component {
                         </div>
                         <div className='project-info-container'>
                             <div className='project-info'>
-                            <h1 className='project-title'>React Slack Clone</h1>
+                            <h2 className='project-title'>React Slack Clone</h2>
                             <span>React | Redux | Firebase | Semantic UI</span>
                             </div>
                             <p className='project-text'>Personally developed a full-stack chat application from front to back with React,
@@ -45,7 +45,7 @@ export default class ProjectsCard extends Component {
                         </div>
                         <div className='project-info-container'>
                             <div className='project-info'>
-                            <h1 className='project-title'>Just A Recipe</h1>
+                            <h2 className='project-title'>Just A Recipe</h2>
                             <span>ReactJS | Node | Express | HTML | CSS | MongoDB | Mongoose | Firebase | Spoonacular API</span>
                             </div>
                             <p className='project-text'>In one week sprint my team I created a full stack website that uses React, NodeJS, Firebase, CSS3 and Spoonacular API to build a recipe site with over 350,000 recipes available for the user. The recipes are able to be called based on name, allergens and dietary.)</p>
@@ -65,7 +65,7 @@ export default class ProjectsCard extends Component {
                         </div>
                         <div className='project-info-container'>
                             <div className='project-info'>
-                            <h1 className='project-title'>Let's Talk About it</h1>
+                            <h2 className='project-title'>Let's Talk About it</h2>
                             <span>Web App</span>
                             <span>ReactJS | Node | Express | HTML | CSS | MongoDB | Mongoose</span>
                             </div>
@@ -86,7 +86,7 @@ export default class ProjectsCard extends Component {
                         </div>
                         <div className='project-info-container'>
                             <div className='project-info'>
-                            <h1 className='project-title'>Salud!</h1>
+                            <h2 className='project-title'>Salud!</h2>
                             <span>React | Node | Cocktail DB API | CSS</span>
                             </div>
                             <p className='project-text'>Created a full stack app in one week sprint using ReactJS and NodeJS.  Salud! is a simple, easy to use app that uses the Cocktail DB API  to get access to over 500+  best and latest cocktail recipes. The cocktails are available to be called based on name.</p>

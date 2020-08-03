@@ -8,7 +8,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Header className='about-me' as='h2'>About Me</Header>
+                <Header className='about-me' as='h1'>About Me</Header>
 
                 <div className='inner-container'>
                     <div className='p-container'>
