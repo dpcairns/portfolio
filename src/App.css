@@ -158,16 +158,14 @@
 
 .project-text {
   margin-bottom: 3rem;
-  /* font-size: 1.4rem; */
+  font-size: 1.4rem;
   color: rgba(0, 0, 0, .7);
+  margin-top: 5px;
 }
 
 .cta {
- color:  #788bff;
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
- font-size: 20px;
+ color:  #788bff; 
+ font-size: 25px;
 }
 
 
@@ -218,20 +216,3 @@
     max-width: 92%;
   }
 }
-
-/* @media screen and (max-width: 768) {
-  .project-post {
-    padding: 1.5rem;
-    flex-direction: column;
-    margin-top: 100px;
-  }
-
-  .project-img-container {
-    min-width: 100%;
-    max-width: 100%;
-    margin-top: 100px;
-  }
-  .project-body {
-    margin-top: 100px;
-  }
-} */
