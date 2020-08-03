@@ -85,6 +85,18 @@
   font-size: 20px;
 }
 
+/* @media screen and (max-width: 420px) {
+  .profile-img {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .project-img-container {
+    min-width: 92%;
+    max-width: 92%;
+  }
+} */
+
 /* Projects card */
 
 .projects {
@@ -213,4 +225,10 @@
     min-width: 92%;
     max-width: 92%;
   }
+}
+
+/* Contact.js */
+
+.contact-container{
+ 
 }

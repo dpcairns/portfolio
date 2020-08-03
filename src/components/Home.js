@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import NavigationBar from './NavigationBar';
 import About from './About';
 import ProjectsCard from './ProjectsCard';
-// import Contact from './Contact';
-// import Footer from './Footer';
 import Intro from './Intro';
+import Contact from './Contact';
 
 export default class Home extends Component {
     render() {
@@ -17,10 +16,9 @@ export default class Home extends Component {
                 <About/>
 
                 <ProjectsCard/>
-                
-                {/* <Contact/>
 
-                <Footer/> */}
+                <Contact/>
+
            </section>
         )
     }

@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
-// import { I } from 'semantic-ui-react';
+import React, { Component } from 'react';
 import recipe from '../assets/recipe.png';
 import chat from '../assets/chat.png';
 import twitter from '../assets/twitter-bot.png';
 import salud from '../assets/salud.png';
 import { Icon } from 'semantic-ui-react';
-// import { Header } from 'semantic-ui-react';
-
-
 
 export default class ProjectsCard extends Component {
     render() {
