@@ -62,7 +62,6 @@ export default class ProjectsCard extends Component {
                         <div className='project-info-container'>
                             <div className='project-info'>
                             <h2 className='project-title'>Let's Talk About it</h2>
-                            <span>Web App</span>
                             <span>ReactJS | Node | Express | HTML | CSS | MongoDB | Mongoose</span>
                             </div>
                             <p className='project-text'>My team and I created a bot for the alchemy code lab community in one week sprint. Let's Talk About It its A backend twitter bot that that helps stop the stigma of mental health by sharing facts and questions to help spark conversation and reflection. It scrapes data about mental health from research papers and websites and then it sends automated tweets for approval via email weekly to the developers team.</p>
