@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-// import { Icon } from 'semantic-ui-react';
+import React from 'react';
 
-export default class Contact extends Component {
-  
-    render() {
+export default function Contact() {
+    return (
+        <div className='contact-container'>
+            <form className='form'>
+                <h1> Contact Form</h1>
+                <label></label>
+                <input placeholder='Name'/>
 
-        return (
-            <div className='contact-container'>
-                        {/* <div className='project-img-container'>
-                            <img className='project-img' src={''} alt=''/>
-                        </div> */}
-                        <div className='project-info-container'>
-                            <div className='project-info'>
-                            <h2 className='project-title'>Contact Me</h2>
-                            {/* <span>React | Redux | Firebase | Semantic UI</span> */}
-                            </div>
-                            <p className='contact-text'>You can always contact me via any of the social platform at the bottom of the page. But a  solid contact form will never fail you!</p>
+                <label></label>
+                <input placeholder='Email'/>
 
-                            
-                        </div>
-                    </div>
-        )
-    }
+                <label></label>
+                <textarea placeholder='Message'></textarea>
+
+                <button type='submit'>Submit</button> 
+
+            </form>
+        </div> 
+    )
 }
+
