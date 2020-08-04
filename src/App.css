@@ -17,16 +17,14 @@
 
 .intro {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 40px;
   margin-top: 10px;
   line-height: 1.15;
 }
 
-
 .steps-container {
-  /* position: relative; */
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 65px;
 
 }
 
@@ -85,22 +83,12 @@
   font-size: 20px;
 }
 
-/* @media screen and (max-width: 420px) {
-  .profile-img {
-    padding: 1.5rem;
-    flex-direction: column;
-  }
-
-  .project-img-container {
-    min-width: 92%;
-    max-width: 92%;
-  }
-} */
-
 /* Projects card */
 
 .projects {
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .project-body {
