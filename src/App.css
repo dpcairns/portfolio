@@ -116,7 +116,7 @@
   width: 100%;
   max-width: 98rem;
   padding: 4rem;
-  background: #fff;
+  background: #EFF1F3;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
   display: flex;
   align-items: center;
@@ -230,5 +230,20 @@
 /* Contact.js */
 
 .contact-container{
- 
+  margin-top: 100px;
+   width: 100%;
+  max-width: 98rem;
+  padding: 3rem;
+  background: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center; 
+  /* /* border-radius: .8rem;  */
+}
+
+.contact-text {
+  margin-top: 20px;
+  font-size: 18px;
+
+
 }
