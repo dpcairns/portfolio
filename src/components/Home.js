@@ -16,8 +16,7 @@ export default class Home extends Component {
                 <About/>
 
                 <ProjectsCard/>
-
-
+                
                 <Contact/>
            </section>
 
