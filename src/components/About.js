@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {  Header, Image } from 'semantic-ui-react';
+import {  Header } from 'semantic-ui-react';
 
 import Pdf from '../Documents/Resume.pdf';
 import profile from '../assets/suri.jpeg';
@@ -8,7 +8,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Header className='about-me' as='h1'>About Me</Header>
+                <Header className='about-me' as='h1'>About Me </Header>
 
                 <div className='inner-container'>
                     <div className='p-container'>
@@ -23,7 +23,7 @@ export default class About extends Component {
                         </p>
                     </div>            
                     <div className='img-container'>
-                        <Image className='profile-img' src={profile}/>
+                        <img className='profile-img' src={profile} alt=''/>
                     </div>      
                 </div>
 

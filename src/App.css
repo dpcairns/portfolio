@@ -83,6 +83,15 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 415px) {
+  .profile-img {
+    width: 200%;
+    border-radius: 50%;
+    position: relative;
+    right: 80%;
+  }
+}
+
 /* Projects card */
 
 .projects {
@@ -250,6 +259,13 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto 100px 0;
+}
+
+.form p {
+  line-height: 1.756;
+  font-size: 18px;
+  font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+  max-width: 700px;
 }
 
 .form > h1 {

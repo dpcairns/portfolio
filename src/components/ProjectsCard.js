@@ -9,7 +9,7 @@ export default class ProjectsCard extends Component {
     render() {
         return (
             <>
-                <h1 className='projects'>Projects</h1>
+                <h1 className='projects'>Projects <span>&#128187;</span></h1>
 
                 {/* project 1 */}
                 <div className='project-body'>
