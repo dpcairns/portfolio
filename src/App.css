@@ -314,7 +314,7 @@ textarea {
   color: #fff;
   cursor: pointer;
   /* transition: 0.2s ease-in-out; */
-  margin-top: 10px;
+  margin: 10px auto;
   width: 100px;
 }
 
