@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import {  Header } from 'semantic-ui-react';
+import React, { Component } from 'react';
 
 import Pdf from '../Documents/Resume.pdf';
 import profile from '../assets/suri.jpeg';
@@ -8,7 +7,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Header className='about-me' as='h1'>About Me </Header>
+                <h1 className='about-me'>About Me </h1>
 
                 <div className='inner-container'>
                     <div className='p-container'>

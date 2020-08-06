@@ -20,6 +20,8 @@
   font-size: 40px;
   margin-top: 10px;
   line-height: 1.15;
+  /* font-size: 32px; */
+  font-family: 'Merriweather',Georgia,Serif;
 }
 
 .steps-container {
@@ -31,8 +33,9 @@
 .steps {
   color: #788bff;
   font-style: normal;
+   font-size: 30px;
+  font-family: 'Merriweather',Georgia,Serif;
   font-weight: 600;
-  font-size: 32px;
   line-height: 1.15;
 }
 
@@ -95,9 +98,12 @@
 /* Projects card */
 
 .projects {
-  margin-top: 70px;
+  margin-top: 150px;
   margin-bottom: 50px;
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 32px;
+  font-family: 'Merriweather',Georgia,Serif;
+
 }
 
 .project-body {
@@ -270,6 +276,8 @@
 }
 
 .form > h1 {
+  font-size: 32px;
+  font-family: 'Merriweather',Georgia,Serif;
   margin-bottom: 30px;
   text-align: center;
 }
