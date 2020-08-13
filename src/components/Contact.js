@@ -29,7 +29,7 @@ class Contact extends Component {
       disabled: true,
     });
 
-    Axios.post("http://localhost:3030/api/email", this.state)
+    Axios.post("http://localhost:3010/api/email", this.state)
       .then((res) => {
         if (res.data.success) {
           this.setState({
@@ -92,6 +92,7 @@ class Contact extends Component {
           type="textarea"
           value={message}
           onChange={this.handleChange}
+          onKeyDown={this.handleKeyDown}
         ></textarea>
 
         <button type="submit" disabled={disabled}>
