@@ -6,7 +6,7 @@
 
 /* navBar.js */
 
-.logo{
+.logo {
   width: 100px;
   position: relative;
   padding-top: 100px;
@@ -21,20 +21,19 @@
   margin-top: 10px;
   line-height: 1.15;
   /* font-size: 32px; */
-  font-family: 'Merriweather',Georgia,Serif;
+  font-family: "Merriweather", Georgia, Serif;
 }
 
 .steps-container {
   margin-top: 30px;
   margin-bottom: 65px;
-
 }
 
 .steps {
   color: #788bff;
   font-style: normal;
-   font-size: 30px;
-  font-family: 'Merriweather',Georgia,Serif;
+  font-size: 30px;
+  font-family: "Merriweather", Georgia, Serif;
   font-weight: 600;
   line-height: 1.15;
 }
@@ -43,13 +42,13 @@
 
 .about-me {
   font-size: 32px;
-  font-family: 'Merriweather',Georgia,Serif;
+  font-family: "Merriweather", Georgia, Serif;
 }
 
 .about-container {
   margin: 0px;
   padding: 0px;
-} 
+}
 
 .inner-container {
   display: flex;
@@ -67,7 +66,9 @@
 .paragraph {
   line-height: 1.756;
   font-size: 18px;
-  font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+  font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont",
+    "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto",
+    "Segoe UI", "Arial", sans-serif;
   max-width: 700px;
 }
 
@@ -102,8 +103,7 @@
   margin-bottom: 50px;
   /* font-size: 40px; */
   font-size: 32px;
-  font-family: 'Merriweather',Georgia,Serif;
-
+  font-family: "Merriweather", Georgia, Serif;
 }
 
 .project-body {
@@ -119,11 +119,11 @@
   width: 90%;
   max-width: 98rem;
   padding: 3rem;
-  background: #F9F8F8;
-  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+  background: #f9f8f8;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .project-img-container {
@@ -139,7 +139,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .project-img-container::before {
@@ -148,7 +148,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .project-info-container {
@@ -158,48 +158,47 @@
 
 .project-info span {
   display: block;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   font-weight: 600;
-  margin: .5rem 0;  
+  margin: 0.5rem 0;
 }
 
 .project-title {
- font-size: 25px;
- margin: 1.5rem 0 2rem;
- text-transform: uppercase;
- color: #788bff;
+  font-size: 25px;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #788bff;
 }
 
 .project-text {
   margin-bottom: 3rem;
   font-size: 18px;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
   margin-top: 5px;
 }
 
 .cta {
- color:  #788bff; 
- font-size: 20px;
+  color: #788bff;
+  font-size: 20px;
 }
 
- @media screen and (max-width: 1068px) {
-   .project-post {
-     max-width: 80rem;
-   }
+@media screen and (max-width: 1068px) {
+  .project-post {
+    max-width: 80rem;
+  }
 
-   .project-img-container {
-     min-width: 30rem;
-     max-width: 30rem;
-   }
- }
+  .project-img-container {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
 
- @media screen and (max-width: 868px) {
+@media screen and (max-width: 868px) {
   .project-post {
     flex-direction: column;
   }
 }
-
 
 @media screen and (max-width: 990px) {
   .project-post {
@@ -208,7 +207,6 @@
   .project-body {
     margin-top: 100px;
     width: 80%;
-
   }
 
   .project-img-container {
@@ -218,7 +216,6 @@
     margin-top: 50px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .project-post {
@@ -251,13 +248,6 @@
 
 /* Contact.js */
 
-/* .contact-container {
-  width: 800px;
-  margin: 0 auto; */
-  /* height: 100vh; */
-  /* background-color: #E6EFE9; */
-
-
 .form {
   position: relative;
   height: 946px;
@@ -270,14 +260,16 @@
 .form p {
   line-height: 1.756;
   font-size: 18px;
-  font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont','San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+  font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont",
+    "San Francisco", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto",
+    "Segoe UI", "Arial", sans-serif;
   max-width: 700px;
   margin: 0 auto 30px;
 }
 
 .form > h1 {
   font-size: 32px;
-  font-family: 'Merriweather',Georgia,Serif;
+  font-family: "Merriweather", Georgia, Serif;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -336,42 +328,31 @@ textarea {
   padding: 10px 15px;
 }
 
-/* .form > button:hover {
-  background-color: #9CA3DB;
- } */
-/* 
-@media screen and (max-width: 515px) {
-  .form input {
-    width: 55%;
-    height: 45px;
-  }
-  .form  textarea {
-    height: 150px;
-    width: 55%;
-    min-height: 100px;
-  }
+/* Footer.js */
+footer {
+  display: block;
 }
-
-@media screen and (max-width: 450px) {
-  .form input {
-    width: 45%;
-    height: 45px;
-  }
-  .form  textarea {
-    height: 150px;
-    width: 45%;
-    min-height: 100px;
-  }
+.line {
+  position: relative;
+  bottom: 100px;
 }
-
-@media screen and (max-width: 420px) {
-  .form input {
-    width: 40%;
-    height: 45px;
-  }
-  .form  textarea {
-    height: 150px;
-    width: 40%;
-    min-height: 100px;
-  }
-}  */
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  /* bottom: 53px; */
+  position: sticky;
+  font-size: 20px;
+  color: grey;
+}
+.footer-text {
+  position: relative;
+  bottom: 50px;
+  color: #59656f;
+  font-size: 18px;
+}
+.contact-logo {
+  font-size: 20px;
+  color: grey;
+  position: relative;
+  bottom: 70px;
+}
