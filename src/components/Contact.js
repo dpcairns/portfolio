@@ -29,7 +29,10 @@ class Contact extends Component {
       disabled: true,
     });
 
-    Axios.post("http://localhost:3010/api/email", this.state)
+    Axios.post(
+      "https://blooming-tundra-90386.herokuapp.com/api/email",
+      this.state
+    )
       .then((res) => {
         if (res.data.success) {
           this.setState({
