@@ -1,5 +1,5 @@
 .app-container {
-  max-width: 1300px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -7,10 +7,43 @@
 /* navBar.js */
 
 .logo {
-  width: 100px;
+  width: 50px;
   position: relative;
-  padding-top: 100px;
-  margin-bottom: 50px;
+}
+nav {
+  margin-bottom: 85px;
+  /* margin-top: 50px; */
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 48px;
+}
+nav ul li:last-child {
+  margin-right: 24px;
+}
+
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.logo-img {
+  width: 80px;
+  position: relative;
+  top: 37px;
 }
 
 /* Intro.js */
@@ -20,7 +53,6 @@
   font-size: 40px;
   margin-top: 10px;
   line-height: 1.15;
-  /* font-size: 32px; */
   font-family: "Merriweather", Georgia, Serif;
 }
 
@@ -99,7 +131,7 @@
 /* Projects card */
 
 .projects {
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 50px;
   /* font-size: 40px; */
   font-size: 32px;
@@ -334,19 +366,18 @@ footer {
 }
 .line {
   position: relative;
-  bottom: 100px;
+  bottom: 200px;
 }
 .footer-container {
   display: flex;
   justify-content: flex-end;
-  /* bottom: 53px; */
   position: sticky;
   font-size: 20px;
   color: grey;
 }
 .footer-text {
   position: relative;
-  bottom: 50px;
+  bottom: 200px;
   color: #59656f;
   font-size: 18px;
 }
@@ -354,5 +385,5 @@ footer {
   font-size: 20px;
   color: grey;
   position: relative;
-  bottom: 70px;
+  bottom: 220px;
 }
