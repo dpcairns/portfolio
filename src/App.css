@@ -387,3 +387,10 @@ footer {
   position: relative;
   bottom: 210px;
 }
+
+/* toggle css */
+.toggle-btn {
+  float: right;
+  margin-left: 45px;
+  margin-top: 8px;
+}

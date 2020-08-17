@@ -4,11 +4,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Home from "./Components/Home";
 import ProjectsCard from "./Components/ProjectsCard";
-// import About from './components/About';
-// import Projects from './components/ProjectsCard';
 import Contact from "./Components/Contact";
-// import Footer from './components/Footer';
 import logo from "./assets/logo.png";
+import Toggle from "./Components/Toggle/Toggle";
 
 function App() {
   return (
@@ -27,6 +25,9 @@ function App() {
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
+              </li>
+              <li>
+                <Toggle />
               </li>
             </ul>
           </div>
