@@ -16,5 +16,12 @@ export default {
     home, watching The Office for the thousandth time or going on road
     trips.`,
     link: "Link to my resume",
+    projects: "Projects",
+    project1: `Personally developed a full-stack chat application from front to back with React,
+        Redux, Firebase 5, and Semantic UI React. React Slack Clone allows user to communicate between
+        development teams or groups (channels)`,
+    project2: `In one week sprint my team and I created a full stack website that uses React, NodeJS, Firebase, CSS3 and Spoonacular API to build a recipe site with over 350,000 recipes available for the user. The recipes are able to be called based on name, allergens and dietary.)`,
+    project3: `My team and I created a bot for the alchemy code lab community in one week sprint. Let's Talk About It its A backend twitter bot that that helps stop the stigma of mental health by sharing facts and questions to help spark conversation and reflection. It scrapes data about mental health from research papers and websites and then it sends automated tweets for approval via email weekly to the developers team.`,
+    project4: `Created a full stack app in one week sprint using ReactJS and NodeJS.  Salud! is a simple, easy to use app that uses the Cocktail DB API  to get access to over 500+  best and latest cocktail recipes. The cocktails are available to be called based on name.`,
   },
 };

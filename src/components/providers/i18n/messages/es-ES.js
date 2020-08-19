@@ -15,5 +15,10 @@ export default {
     paragraph3:
       "Cuando no estoy codificando, me puedes encontrar cocinando deliciosas comidas en casa, viendo The Office por milesima vez o yendo de road trip.",
     link: "Enlace a mi currículum",
+    projects: "Proyectos",
+    project1: `Desarrollé personalmente una aplicación de chat con React,Redux, Firebase 5 y Semantic UI React. React Slack Clone permite al usuario comunicarse entre equipos de desarrollo o grupos de chat (canales)`,
+    project2: `En una semana, mi equipo y yo creamos un sitio web con React, NodeJS, Firebase, CSS3 y Spoonacular API para construir un sitio de recetas con más de 350,000 recetas disponibles para el usuario. Las recetas pueden llamarse según el nombre, los alérgenos y la dieta).`,
+    project3: `Mi equipo y yo creamos un bot en una semana. Let's Talk About It, es un bot backend de twitter que ayuda a detener el estigma de la salud mental al compartir hechos y preguntas para ayudar a generar conversación y reflexión. Recoge datos sobre salud mental de artículos de investigación y sitios web y luego envía tweets automatizados para su aprobación por correo electrónico semanalmente al equipo de desarrolladores.`,
+    project4: `Mi equipo y yo creamos una aplicación completa en una semana usando ReactJS y NodeJS. Salud! es una aplicación simple y fácil de usar que utiliza la API de Cocktail DB para obtener acceso a más de 500 recetas de los mejores cócteles y los más recientes. Los cócteles están disponibles para ser llamados según el nombre.`,
   },
 };
