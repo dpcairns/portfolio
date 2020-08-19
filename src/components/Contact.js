@@ -1,6 +1,27 @@
 import React, { Component } from "react";
 import Axios from "axios";
 
+const messages = {
+  en: {
+    title: "Contact Me",
+    paragraph1: `I know a solid contact form will never fail you. But you can also
+    contact me via any of the social platforms at the bottom of the page.`,
+    paragraph2: ` Just drop me a message of whatever you feel like, a cool idea or maybe
+    you just want to get in contact with me, and I will go back to you as
+    soon as I can.`,
+  },
+  es: {
+    title: `Hablemos`,
+    paragraph1: `Sé que un formulario de contacto sólido nunca te fallará. Pero tu tambien puedes
+    contácteme a través de cualquiera de las plataformas sociales en la parte inferior de la página.`,
+    paragraph2: `Envíeme un mensaje de lo que le apetezca, una idea genial o tal vez
+    solo quieres ponerte en contacto conmigo, y te responderé 
+    tan pronto como pueda.`,
+    name: "Nombre Completo",
+    email: "Correo electrónico",
+  },
+};
+
 class Contact extends Component {
   state = {
     name: "",

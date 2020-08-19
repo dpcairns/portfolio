@@ -1,4 +1,4 @@
-.app-container {
+.app_container {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
@@ -394,3 +394,6 @@ footer {
   margin-left: 45px;
   margin-top: 8px;
 }
+/* .toggle-label {
+  border-radius: 50%;
+} */

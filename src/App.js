@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import LangSwitcher from "./Components/LangSwitcher";
+// import {AppContext} from './Components/providers/context';
 
 import Home from "./Components/Home";
 import ProjectsCard from "./Components/ProjectsCard";
 import Contact from "./Components/Contact";
 import logo from "./assets/logo.png";
-import Toggle from "./Components/Toggle/Toggle";
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app_container">
       <Router>
         <nav>
           <div className="logo">
@@ -27,7 +29,7 @@ function App() {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Toggle />
+                <LangSwitcher />
               </li>
             </ul>
           </div>
