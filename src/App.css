@@ -62,9 +62,10 @@ nav ul li a {
 }
 
 .steps {
+  position: relative;
   color: #788bff;
   font-style: normal;
-  font-size: 30px;
+  font-size: 31px;
   font-family: "Merriweather", Georgia, Serif;
   font-weight: 600;
   line-height: 1.15;
@@ -388,12 +389,7 @@ footer {
   bottom: 210px;
 }
 
-/* toggle css */
-.toggle-btn {
-  float: right;
-  margin-left: 45px;
-  margin-top: 8px;
+/* Typewriter css */
+.Typewriter__cursor {
+  border-right: 2px #788bff solid;
 }
-/* .toggle-label {
-  border-radius: 50%;
-} */

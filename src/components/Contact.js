@@ -1,134 +1,108 @@
-import React, { Component } from "react";
+import React, { useState, useReducer, useContext } from "react";
 import Axios from "axios";
 
-const messages = {
-  en: {
-    title: "Contact Me",
-    paragraph1: `I know a solid contact form will never fail you. But you can also
-    contact me via any of the social platforms at the bottom of the page.`,
-    paragraph2: ` Just drop me a message of whatever you feel like, a cool idea or maybe
-    you just want to get in contact with me, and I will go back to you as
-    soon as I can.`,
-  },
-  es: {
-    title: `Hablemos`,
-    paragraph1: `Sé que un formulario de contacto sólido nunca te fallará. Pero tu tambien puedes
-    contácteme a través de cualquiera de las plataformas sociales en la parte inferior de la página.`,
-    paragraph2: `Envíeme un mensaje de lo que le apetezca, una idea genial o tal vez
-    solo quieres ponerte en contacto conmigo, y te responderé 
-    tan pronto como pueda.`,
-    name: "Nombre Completo",
-    email: "Correo electrónico",
-  },
+import { I18nProvider } from "./providers/i18n";
+import translate from "./providers/i18n/translate";
+import { AppContext } from "./providers/context";
+
+const initialState = {
+  name: "",
+  email: "",
+  message: "",
 };
 
-class Contact extends Component {
-  state = {
-    name: "",
-    email: "",
-    message: "",
-    disabled: false,
-    emailSent: null,
+const formReducer = (state, { field, value }) => {
+  return {
+    ...state,
+    [field]: value,
   };
+};
 
-  handleChange = (event) => {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
+export default function ContactCopy() {
+  const [disabled, setDisabled] = useState(false);
+  const [emailSent, setEmailSent] = useState(null);
+  const [formState, dispatch] = useReducer(formReducer, initialState);
 
-    this.setState({
-      [name]: value,
-    });
-  };
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-
-    console.log(event.target);
-
-    this.setState({
-      disabled: true,
-    });
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
     Axios.post(
       "https://blooming-tundra-90386.herokuapp.com/api/email",
-      this.state
+      formState
     )
       .then((res) => {
         if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true,
-          });
+          setDisabled(true);
+          setEmailSent(true);
         } else {
-          this.setState({
-            disabled: false,
-            emailSent: false,
-          });
+          setDisabled(false);
+          setEmailSent(false);
         }
       })
       .catch((err) => {
         console.log(err);
-
-        this.setState({
-          disabled: false,
-          emailSent: false,
-        });
+        setDisabled(false);
+        setEmailSent(false);
       });
   };
 
-  render() {
-    const { name, message, email, disabled, emailSent } = this.state;
-    return (
-      <form className="form" onSubmit={this.handleSubmit}>
-        <h1> Contact Me</h1>
+  const handleChange = (e) => {
+    dispatch({ field: e.target.name, value: e.target.value });
+  };
 
-        <p>
-          I know a solid contact form will never fail you. But you can also
-          contact me via any of the social platforms at the bottom of the page.
-        </p>
+  const { name, email, message } = formState;
+  const { state } = useContext(AppContext);
 
-        <p>
-          Just drop me a message of whatever you feel like, a cool idea or maybe
-          you just want to get in contact with me, and I will go back to you as
-          soon as I can. <span>&#128231;</span>
-        </p>
+  return (
+    <I18nProvider locale={state.siteLang}>
+      <div>
+        <form className="form" onSubmit={handleSubmit}>
+          <h1> {translate("contact_me")}</h1>
 
-        <input
-          placeholder="Full Name"
-          name="name"
-          type="text"
-          value={name}
-          onChange={this.handleChange}
-        />
+          <p>{translate("contact_p_1")}</p>
 
-        <input
-          placeholder="Email"
-          name="email"
-          type="email"
-          value={email}
-          onChange={this.handleChange}
-        />
+          <p>
+            {translate("contact_p_2")}
+            <span>&#128231;</span>
+          </p>
 
-        <textarea
-          placeholder="Message"
-          name="message"
-          type="textarea"
-          value={message}
-          onChange={this.handleChange}
-          onKeyDown={this.handleKeyDown}
-        ></textarea>
+          <input
+            placeholder="Full Name"
+            name="name"
+            type="text"
+            value={name}
+            onChange={handleChange}
+          />
 
-        <button type="submit" disabled={disabled}>
-          Send
-        </button>
+          <input
+            placeholder="Email"
+            name="email"
+            type="email"
+            value={email}
+            onChange={handleChange}
+          />
 
-        {/* &&(and) if does equal true we are going to have "Email Sent " */}
-        {emailSent === true && <p className="success-msg">Email Sent</p>}
-        {emailSent === false && <p className="err-msg">Email Not Sent</p>}
-      </form>
-    );
-  }
+          <textarea
+            placeholder="Message"
+            name="message"
+            type="textarea"
+            value={message}
+            onChange={handleChange}
+          ></textarea>
+
+          <button type="submit" disabled={disabled}>
+            {translate("button")}
+          </button>
+
+          {/* &&(and) if does equal true we are going to have "Email Sent " */}
+          {emailSent === true && (
+            <p className="success-msg">{translate("emailSent")}</p>
+          )}
+          {emailSent === false && (
+            <p className="err-msg">{translate("emailNotSent")}</p>
+          )}
+        </form>
+      </div>
+    </I18nProvider>
+  );
 }
-
-export default Contact;

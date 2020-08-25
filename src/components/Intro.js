@@ -4,7 +4,8 @@ import { I18nProvider } from "./providers/i18n";
 import translate from "./providers/i18n/translate";
 import { AppContext } from "./providers/context";
 
-import Typical from "react-typical";
+import Typist from "react-typist";
+import TypistLoop from "react-typist-loop";
 
 export default function Intro() {
   const { state } = useContext(AppContext);
@@ -13,19 +14,18 @@ export default function Intro() {
       <div>
         <h1 className="intro"> {translate("intro")}</h1>
         <div className="steps-container">
-          <Typical
-            className="steps"
-            loop={Infinity}
-            wrapper="b"
-            steps={[
-              "Web Developer",
-              1000,
-              "Creative",
-              1000,
-              "Passionate",
-              1000,
-            ]}
-          />
+          <TypistLoop interval={1000}>
+            {["Software Developer", "Creative", "Passionate"].map((text) => (
+              <Typist
+                className="steps"
+                key={text}
+                startDelay={500}
+                // eraseDelay="500"
+              >
+                {text}
+              </Typist>
+            ))}
+          </TypistLoop>
         </div>
       </div>
     </I18nProvider>
