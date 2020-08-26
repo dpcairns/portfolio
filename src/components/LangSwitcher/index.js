@@ -11,8 +11,8 @@ export default () => {
     setLanguage(LOCALES[e.target.value]);
   };
   return (
-    <div>
-      <select onChange={handleChange}>
+    <div className="select">
+      <select className="select" onChange={handleChange}>
         {Object.keys(LOCALES).map((locale) => {
           return (
             <option key={locale} value={locale}>

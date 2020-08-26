@@ -5,7 +5,9 @@ export default {
     project_nav: "Projects",
     contact_nav: "Contact",
     intro: "Hello, I am Surelis Segarra",
-    steps: ["Software Developer", "Creative", "Passionate"],
+    step1: "Software Developer",
+    step2: "Creative",
+    step3: "Passionate",
     title: "About Me",
     paragraph1: `My name is Surelis Segarra. In 2017 I moved from Puerto Rico due
     to Hurricane Maria. Because of this I moved to Oregon to start a

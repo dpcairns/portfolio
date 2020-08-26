@@ -5,7 +5,9 @@ export default {
     project_nav: "proyectos",
     contact_nav: "Contacto",
     intro: "Hola, soy Surelis Segarra",
-    steps: ["Desarrolladora de Software", "Creativa", "Apasionada"],
+    step1: "Desarolladora de  Software",
+    step2: "Creativa",
+    step3: "Apasionada",
     title: "Sobre Mi",
     paragraph1: `Mi nombre es Surelis Segarra. En 2017 me mudé de Puerto Rico debido
         al huracán María. Debido a esto me mudé a Oregon para comenzar un
