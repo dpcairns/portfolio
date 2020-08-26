@@ -10,9 +10,9 @@ import TypistLoop from "react-typist-loop";
 export default function Intro() {
   const translation = (words) => {
     return (
-      <TypistLoop interval={1000}>
+      <TypistLoop interval={2000}>
         {words.map((text) => (
-          <Typist className="steps" key={text} startDelay={500}>
+          <Typist className="steps" key={text} startDelay={800}>
             {text}
           </Typist>
         ))}
@@ -32,9 +32,9 @@ export default function Intro() {
           {state.siteLang === "en-us"
             ? translation(["Software Developer", "Creative", "Passionate"])
             : translation([
-                "Desarrolladora De Doftware",
+                "Desarrolladora De Software",
                 "Creativa",
-                "apasionada",
+                "Apasionada",
               ])}
         </div>
       </div>
