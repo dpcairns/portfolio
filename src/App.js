@@ -13,6 +13,8 @@ import ProjectsCard from "./Components/ProjectsCard";
 import Contact from "./Components/Contact";
 import logo from "./assets/logo.png";
 
+require("dotenv").config();
+process.env.CI = false;
 function App() {
   const { state } = useContext(AppContext);
   return (
